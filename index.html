@@ -1,0 +1,171 @@
+<html>
+<head>
+	<title>Freshelp</title>             <!-- Citation: w3schools.com-->
+		<link rel="stylesheet" href="a.css">
+	<style>
+		* {box-sizing:border-box}
+		body {font-family: Verdana,sans-serif;}
+		.mySlides {display:none}
+
+		/* Slideshow container */
+		.slideshow-container {
+			padding-right: 35%;
+			max-width: 1020px;
+			max-height:800px;
+			margin: auto;
+			margin-top:180px;
+
+		}
+
+
+		/* The dots/bullets/indicators */
+		.dot {
+			height: 13px;
+			width: 13px;
+			margin: 0 2px;
+			background-color: #bbb;
+			border-radius: 50%;
+			display: inline-block;
+			transition: background-color 0.6s ease;
+		}
+
+		.active {
+			background-color: #717171;
+		}
+
+		/* Fading animation */
+		.fade {
+			-webkit-animation-name: fade;
+			-webkit-animation-duration: 1.5s;
+			animation-name: fade;
+			animation-duration: 1.5s;
+		}
+
+		@-webkit-keyframes fade {
+			from {opacity: .4} 
+			to {opacity: 1}
+		}
+
+		@keyframes fade {
+			from {opacity: .4} 
+			to {opacity: 1}
+		}
+
+		/* On smaller screens, decrease text size */
+		@media only screen and (max-width: 300px) {
+			.text {font-size: 11px}
+		}
+	</style>
+
+	<script type="text/javascript" src="b.js"></script>
+	
+</head>
+<body>
+	<h1>Problem for FRESHERS??? Here WE are!!!!!!</h1>
+	<div  style ="padding-left: 25%">
+		<nav id="primary_nav_wrap">
+			<ul>
+				<li class="current-menu-item"><a href="#">Home</a></li>
+				<li class="current-menu-item"><a href="#">Colleges</a>
+					<ul>
+						<li ><a href="#">IITs</a>
+							<ul>
+								<li><a href="bombay.html">IIT BOMBAY</a></li>
+								<li><a href="delhi.html">IIT DELHI</a></li>
+								<li><a href="kharagpur.html">IIT KHARAGPUR</a></li>
+							</ul>
+						</li>
+						<li><a href="#">NITs</a>
+							<ul>
+								<li><a href="nitd.html">NIT DURGAPUR</a></li>
+								<li><a href="nitw.html">NIT WARANGAL</a></li>
+								<li><a href="nitt.html">NIT TRICHY</a></li>
+							</ul>
+						</li>
+						<li><a href="others.html">OTHERS</a>
+						</ul>
+					</li>
+					<li class="current-menu-item"><a href="speak.html">Students Speak</a></li>
+					<li class="current-menu-item"><a href="#">Your Queries</a>
+						<ul>
+							<li class="dir"><a href="students.html">Students</a></li>
+							<li class="dir"><a href="parents.html">Parents</a>
+							</li>
+							<li><a href="teachers.html">Teachers</a></li>
+						</ul>
+					</li>
+					<li class="current-menu-item"><a href="aboutus.html">About Us</a></li>
+					<li class="current-menu-item"><a href="contactus.html">Contact Us</a></li>
+					<li class="current-menu-item"><a href="feedback.html">Rate Us</a></li>
+
+				</ul>
+			</nav>
+			<div class="slideshow-container">
+
+				<div class="mySlides fade">
+
+					<img src="i1.jpg" style="width:100%">
+
+				</div>
+
+				<div class="mySlides fade">
+
+					<img src="i2.jpg" style="width:100%">
+
+				</div>
+
+				<div class="mySlides fade">
+
+					<img src="i3.jpg" style="width:100%">
+
+				</div>
+
+			</div>
+			<br>
+
+			<div style="text-align:center">
+				<span class="dot"></span> 
+				<span class="dot"></span> 
+				<span class="dot"></span> 
+			</div>
+
+			<script>
+				var slideIndex = 0;
+				showSlides();
+
+				function showSlides() {
+					var i;
+					var slides = document.getElementsByClassName("mySlides");
+					var dots = document.getElementsByClassName("dot");
+					for (i = 0; i < slides.length; i++) {
+						slides[i].style.display = "none";  
+					}
+					slideIndex++;
+					if (slideIndex> slides.length) {slideIndex = 1}    
+						for (i = 0; i < dots.length; i++) {
+							dots[i].className = dots[i].className.replace(" active", "");
+						}
+						slides[slideIndex-1].style.display = "block";  
+						dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+</div>
+
+<center><p style="background: grey; text-align:center; width: 700px"><marquee>
+	BY THE 1ST YEARS, FOR THE FIRST YEARS. OF THE FIRST YEARS!!!</marquee>
+</p></center>
+
+<center><p>
+	Being the first year students,we experienced the difficulties that has hindered your your smooth flow of life :(
+</p>
+<p>
+	But dont't worry! We are here to help you out! :D
+</p>
+<p>
+	So what are you waiting for???? Lets get started!!!! :)
+</p></center>
+<footer>
+<p style="font-size:10px; text-align:center; font-family:agency fb; color:red;"> Copyright: Team INFANTS (2017)
+</body>
+</html>
